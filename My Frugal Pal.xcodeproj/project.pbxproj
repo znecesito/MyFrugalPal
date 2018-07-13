@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3443E3DC20D0339600FE6932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3DB20D0339600FE6932 /* AppDelegate.swift */; };
+		3443E3DE20D0339600FE6932 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3DD20D0339600FE6932 /* MainViewController.swift */; };
+		3443E3E120D0339600FE6932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3443E3DF20D0339600FE6932 /* Main.storyboard */; };
+		3443E3E620D0339B00FE6932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3443E3E420D0339B00FE6932 /* LaunchScreen.storyboard */; };
+		3443E3F220D0559500FE6932 /* ConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F120D0559500FE6932 /* ConfigController.swift */; };
+		3443E3F420D05AE000FE6932 /* WeekController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F320D05AE000FE6932 /* WeekController.swift */; };
+		3443E3F620D0B73C00FE6932 /* WeeklyBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F520D0B73C00FE6932 /* WeeklyBudget.swift */; };
+		3443E3F820D0BB4200FE6932 /* DayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F720D0BB4200FE6932 /* DayController.swift */; };
+		344ED5F420DB76A4004172FF /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344ED5F320DB76A4004172FF /* RegisterController.swift */; };
+		344ED5F620DB76DD004172FF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344ED5F520DB76DD004172FF /* LoginController.swift */; };
+		345226B0649DAD1EC84F774A /* Pods_My_Frugal_Pal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F82546243356AF757077D57 /* Pods_My_Frugal_Pal.framework */; };
+		3492BE2020D8A0EE0046187F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3492BE1F20D8A0EE0046187F /* GoogleService-Info.plist */; };
+		34D84ECF20DB12150035DC10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D84ECE20DB12150035DC10 /* Images.xcassets */; };
+		34FE6CA820F801EA00372B39 /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CA720F801EA00372B39 /* DayTableViewController.swift */; };
+		34FE6CAA20F8076E00372B39 /* CutomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CA920F8076E00372B39 /* CutomNavigationController.swift */; };
+		34FE6CAC20F8165200372B39 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CAB20F8165200372B39 /* User.swift */; };
+		34FE6CAE20F81B0900372B39 /* DailyBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CAD20F81B0900372B39 /* DailyBudget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F82546243356AF757077D57 /* Pods_My_Frugal_Pal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Frugal_Pal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6D57CA45806E2189A94AC8 /* Pods-My Frugal Pal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Frugal Pal.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Frugal Pal/Pods-My Frugal Pal.release.xcconfig"; sourceTree = "<group>"; };
+		219DE7C080DD8EC6CD69D337 /* Pods-My Frugal Pal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Frugal Pal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Frugal Pal/Pods-My Frugal Pal.debug.xcconfig"; sourceTree = "<group>"; };
+		3443E3D820D0339600FE6932 /* My Frugal Pal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Frugal Pal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3443E3DB20D0339600FE6932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3443E3DD20D0339600FE6932 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3443E3E020D0339600FE6932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3443E3E520D0339B00FE6932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3443E3E720D0339B00FE6932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3443E3F120D0559500FE6932 /* ConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigController.swift; sourceTree = "<group>"; };
+		3443E3F320D05AE000FE6932 /* WeekController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekController.swift; sourceTree = "<group>"; };
+		3443E3F520D0B73C00FE6932 /* WeeklyBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyBudget.swift; sourceTree = "<group>"; };
+		3443E3F720D0BB4200FE6932 /* DayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayController.swift; sourceTree = "<group>"; };
+		344ED5F320DB76A4004172FF /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		344ED5F520DB76DD004172FF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		3492BE1F20D8A0EE0046187F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34D84ECE20DB12150035DC10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		34FE6CA720F801EA00372B39 /* DayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewController.swift; sourceTree = "<group>"; };
+		34FE6CA920F8076E00372B39 /* CutomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutomNavigationController.swift; sourceTree = "<group>"; };
+		34FE6CAB20F8165200372B39 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		34FE6CAD20F81B0900372B39 /* DailyBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBudget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3443E3D520D0339600FE6932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345226B0649DAD1EC84F774A /* Pods_My_Frugal_Pal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E44E8B5148B8ABA6578D5C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F82546243356AF757077D57 /* Pods_My_Frugal_Pal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3443E3CF20D0339600FE6932 = {
+			isa = PBXGroup;
+			children = (
+				3443E3DA20D0339600FE6932 /* My Frugal Pal */,
+				3443E3D920D0339600FE6932 /* Products */,
+				35FC6D11365799A6972FE3C3 /* Pods */,
+				1E44E8B5148B8ABA6578D5C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3443E3D920D0339600FE6932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3443E3D820D0339600FE6932 /* My Frugal Pal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3443E3DA20D0339600FE6932 /* My Frugal Pal */ = {
+			isa = PBXGroup;
+			children = (
+				3443E3EF20D0340900FE6932 /* View */,
+				3443E3ED20D033FD00FE6932 /* Model */,
+				3443E3EE20D0340600FE6932 /* Controller */,
+				3443E3E420D0339B00FE6932 /* LaunchScreen.storyboard */,
+				3443E3F020D0349900FE6932 /* Supporting Files */,
+				34D84ECE20DB12150035DC10 /* Images.xcassets */,
+			);
+			path = "My Frugal Pal";
+			sourceTree = "<group>";
+		};
+		3443E3ED20D033FD00FE6932 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34FE6CAB20F8165200372B39 /* User.swift */,
+				3443E3F520D0B73C00FE6932 /* WeeklyBudget.swift */,
+				34FE6CAD20F81B0900372B39 /* DailyBudget.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3443E3EE20D0340600FE6932 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3443E3DB20D0339600FE6932 /* AppDelegate.swift */,
+				3443E3DD20D0339600FE6932 /* MainViewController.swift */,
+				3443E3F120D0559500FE6932 /* ConfigController.swift */,
+				3443E3F320D05AE000FE6932 /* WeekController.swift */,
+				3443E3F720D0BB4200FE6932 /* DayController.swift */,
+				344ED5F320DB76A4004172FF /* RegisterController.swift */,
+				344ED5F520DB76DD004172FF /* LoginController.swift */,
+				34FE6CA720F801EA00372B39 /* DayTableViewController.swift */,
+				34FE6CA920F8076E00372B39 /* CutomNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3443E3EF20D0340900FE6932 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3443E3DF20D0339600FE6932 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3443E3F020D0349900FE6932 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3492BE1F20D8A0EE0046187F /* GoogleService-Info.plist */,
+				3443E3E720D0339B00FE6932 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35FC6D11365799A6972FE3C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				219DE7C080DD8EC6CD69D337 /* Pods-My Frugal Pal.debug.xcconfig */,
+				1A6D57CA45806E2189A94AC8 /* Pods-My Frugal Pal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3443E3D720D0339600FE6932 /* My Frugal Pal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3443E3EA20D0339B00FE6932 /* Build configuration list for PBXNativeTarget "My Frugal Pal" */;
+			buildPhases = (
+				785EBC1E5AEDADBA8CFDC4A1 /* [CP] Check Pods Manifest.lock */,
+				3443E3D420D0339600FE6932 /* Sources */,
+				3443E3D520D0339600FE6932 /* Frameworks */,
+				3443E3D620D0339600FE6932 /* Resources */,
+				3155A16E789BF03990FDCB81 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Frugal Pal";
+			productName = "My Frugal Pal";
+			productReference = 3443E3D820D0339600FE6932 /* My Frugal Pal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3443E3D020D0339600FE6932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Zackarin Necesito";
+				TargetAttributes = {
+					3443E3D720D0339600FE6932 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3443E3D320D0339600FE6932 /* Build configuration list for PBXProject "My Frugal Pal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3443E3CF20D0339600FE6932;
+			productRefGroup = 3443E3D920D0339600FE6932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3443E3D720D0339600FE6932 /* My Frugal Pal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3443E3D620D0339600FE6932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3443E3E620D0339B00FE6932 /* LaunchScreen.storyboard in Resources */,
+				34D84ECF20DB12150035DC10 /* Images.xcassets in Resources */,
+				3492BE2020D8A0EE0046187F /* GoogleService-Info.plist in Resources */,
+				3443E3E120D0339600FE6932 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3155A16E789BF03990FDCB81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My Frugal Pal/Pods-My Frugal Pal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Frugal Pal/Pods-My Frugal Pal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		785EBC1E5AEDADBA8CFDC4A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Frugal Pal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3443E3D420D0339600FE6932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3443E3F820D0BB4200FE6932 /* DayController.swift in Sources */,
+				3443E3F420D05AE000FE6932 /* WeekController.swift in Sources */,
+				3443E3DE20D0339600FE6932 /* MainViewController.swift in Sources */,
+				344ED5F420DB76A4004172FF /* RegisterController.swift in Sources */,
+				34FE6CAA20F8076E00372B39 /* CutomNavigationController.swift in Sources */,
+				3443E3F220D0559500FE6932 /* ConfigController.swift in Sources */,
+				344ED5F620DB76DD004172FF /* LoginController.swift in Sources */,
+				3443E3DC20D0339600FE6932 /* AppDelegate.swift in Sources */,
+				3443E3F620D0B73C00FE6932 /* WeeklyBudget.swift in Sources */,
+				34FE6CA820F801EA00372B39 /* DayTableViewController.swift in Sources */,
+				34FE6CAE20F81B0900372B39 /* DailyBudget.swift in Sources */,
+				34FE6CAC20F8165200372B39 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3443E3DF20D0339600FE6932 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3443E3E020D0339600FE6932 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3443E3E420D0339B00FE6932 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3443E3E520D0339B00FE6932 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3443E3E820D0339B00FE6932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3443E3E920D0339B00FE6932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3443E3EB20D0339B00FE6932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 219DE7C080DD8EC6CD69D337 /* Pods-My Frugal Pal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VBDN89QUL5;
+				INFOPLIST_FILE = "My Frugal Pal/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zacknecesito.My-Frugal-Pal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3443E3EC20D0339B00FE6932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6D57CA45806E2189A94AC8 /* Pods-My Frugal Pal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VBDN89QUL5;
+				INFOPLIST_FILE = "My Frugal Pal/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zacknecesito.My-Frugal-Pal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3443E3D320D0339600FE6932 /* Build configuration list for PBXProject "My Frugal Pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3443E3E820D0339B00FE6932 /* Debug */,
+				3443E3E920D0339B00FE6932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3443E3EA20D0339B00FE6932 /* Build configuration list for PBXNativeTarget "My Frugal Pal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3443E3EB20D0339B00FE6932 /* Debug */,
+				3443E3EC20D0339B00FE6932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3443E3D020D0339600FE6932 /* Project object */;
+}
