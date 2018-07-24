@@ -7,15 +7,13 @@
 //
 
 import Foundation
+import RealmSwift
 
-class WeeklyBudget {
+class WeeklyBudget: Object {
     
-    var day : String?
-    var dailyBudget : [DailyBudget]?
+    @objc dynamic var day : String = ""
+    var dailySpendings = List<DailySpendings>()
     
-    
-    
-    init() {
-    }
+    var parentCategory = LinkingObjects(fromType: User.self, property: "weeklyBudget") 
     
 }

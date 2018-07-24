@@ -22,15 +22,22 @@ class WeekController: UIViewController {
     @IBOutlet weak var saturdayLabel: UILabel!
     
     let numberFormatter = NumberFormatter()
-    let weeklyBudget = User()
-    var dayPressed : Int = 0
+    var dayPressed: String = ""
+    var spentOnDay: Double = 0.0
+    var dailySpendingsDict = ["Sunday": 0.0,
+                              "Monday": 0.0,
+                              "Tuesday": 0.0,
+                              "Wednesday": 0.0,
+                              "Thursday": 0.0,
+                              "Friday": 0.0,
+                              "Saturday": 0.0,]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
         retrieveBudget()
         retrieveSpendDaily()
-                
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,17 +56,17 @@ class WeekController: UIViewController {
         updateDB.observe(DataEventType.value, with: { (snapshot) in
             
             if snapshot.childSnapshot(forPath: "Budget").hasChildren(),
-                snapshot.childSnapshot(forPath: "Daily Spending").hasChildren() {
+                snapshot.childSnapshot(forPath: "Sum").hasChildren() {
                 
                 let budgetValue = snapshot.childSnapshot(forPath: "Budget").value as! Dictionary<String,String>
-                let spendValue = snapshot.childSnapshot(forPath: "Daily Spending").value as! Dictionary<String,Double>
+                let spendValue = snapshot.childSnapshot(forPath: "Sum").value as! Dictionary<String,Double>
                 
                 var totalSpent = 0.0
                 
                 for (_, money) in spendValue {
-                    
+
                     totalSpent += money
-                    
+
                 }
                 
                 var currentBudget = self.numberFormatter.number(from: budgetValue["Budget"]!)?.doubleValue
@@ -80,23 +87,23 @@ class WeekController: UIViewController {
         
     }
     
-    func retrieveSpendDaily() {
+    func retrieveSpendDaily()  {
         
         let spendDB = Database.database().reference().child((Auth.auth().currentUser?.uid)!)
         
-        spendDB.child("Daily Spending").observe(DataEventType.value) { (snapshot) in
+        spendDB.child("Sum").observe(DataEventType.value) { (snapshot) in
             
             if snapshot.hasChildren() {
                 
                 if self.checkDate() {
                     
-                    spendDB.child("Daily Spending").setValue(self.weeklyBudget.dailySpending)
+                    spendDB.child("Daily Spending").setValue(self.dailySpendingsDict)
                     
                 }
                 
                 let snapshotValue = snapshot.value as! Dictionary<String, Double>
                 
-                self.setWeeklyLabels(spentOnDay: snapshotValue)
+                self.setWeeklyLabels(dailyDictionary: snapshotValue)
                 
             }
             
@@ -104,15 +111,15 @@ class WeekController: UIViewController {
         
     }
     
-    func setWeeklyLabels(spentOnDay: Dictionary<String, Double>) {
+    func setWeeklyLabels(dailyDictionary: Dictionary<String, Double>) {
         
-        sundayLabel.text = "$\(spentOnDay["Sunday"]!)"
-        mondayLabel.text = "$\(spentOnDay["Monday"]!)"
-        tuesdayLabel.text = "$\(spentOnDay["Tuesday"]!)"
-        wednesdayLabel.text = "$\(spentOnDay["Wednesday"]!)"
-        thursdayLabel.text = "$\(spentOnDay["Thursday"]!)"
-        fridayLabel.text = "$\(spentOnDay["Friday"]!)"
-        saturdayLabel.text = "$\(spentOnDay["Saturday"]!)"
+        sundayLabel.text = "$\(dailyDictionary["Sunday"]!)"
+        mondayLabel.text = "$\(dailyDictionary["Monday"]!)"
+        tuesdayLabel.text = "$\(dailyDictionary["Tuesday"]!)"
+        wednesdayLabel.text = "$\(dailyDictionary["Wednesday"]!)"
+        thursdayLabel.text = "$\(dailyDictionary["Thursday"]!)"
+        fridayLabel.text = "$\(dailyDictionary["Friday"]!)"
+        saturdayLabel.text = "$\(dailyDictionary["Saturday"]!)"
         
     }
     
@@ -132,60 +139,67 @@ class WeekController: UIViewController {
     
     @IBAction func sundayPressed(_ sender: Any) {
         
-        dayPressed = 0
+        dayPressed = "Sunday"
         performSegue(withIdentifier: "goToDayController", sender: self)
         
     }
     
     @IBAction func mondayPressed(_ sender: Any) {
         
-        dayPressed = 1
+        dayPressed = "Monday"
         performSegue(withIdentifier: "goToDayController", sender: self)
         
     }
     
     @IBAction func tuesdayPressed(_ sender: Any) {
         
-        dayPressed = 2
+        dayPressed = "Tuesday"
         performSegue(withIdentifier: "goToDayController", sender: self)
         
     }
     
     @IBAction func wednesdayPressed(_ sender: Any) {
         
-        dayPressed = 3
+        dayPressed = "Wednesday"
         performSegue(withIdentifier: "goToDayController", sender: self)
         
     }
     
     @IBAction func thursdayPressed(_ sender: Any) {
         
-        dayPressed = 4
+        dayPressed = "Thursday"
         performSegue(withIdentifier: "goToDayController", sender: self)
         
     }
     
     @IBAction func fridayPressed(_ sender: Any) {
         
-        dayPressed = 5
+        dayPressed = "Friday"
         performSegue(withIdentifier: "goToDayController", sender: self)
         
     }
     
     @IBAction func saturdayPressed(_ sender: Any) {
         
-        dayPressed = 6
+        dayPressed = "Saturday"
         performSegue(withIdentifier: "goToDayController", sender: self)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.destination is DayController
+        if segue.destination is DayTableViewController
         {
-            let vc = segue.destination as? DayController
-            vc?.dayOfWeek = dayPressed
+            let vc = segue.destination as? DayTableViewController
+            vc?.today = dayPressed
         }
+        
+        if segue.destination is ConfigController
+        {
+            let vc = segue.destination as? ConfigController
+            vc?.sumDict = dailySpendingsDict
+        }
+        
     }
 
 }

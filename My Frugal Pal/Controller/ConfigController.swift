@@ -16,8 +16,8 @@ class ConfigController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var spendLabel: UITextField!
     @IBOutlet weak var salaryLabel: UITextField!
 
-    
     let numberFormatter = NumberFormatter()
+    var sumDict = Dictionary<String, Double>()
     
     override func viewDidLoad() {
         
@@ -30,7 +30,7 @@ class ConfigController: UIViewController, UITextFieldDelegate {
         budgetLabel.keyboardType = .numberPad
         spendLabel.keyboardType = .numberPad
         salaryLabel.keyboardType = .numberPad
-        
+
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -119,9 +119,7 @@ class ConfigController: UIViewController, UITextFieldDelegate {
     }
     
     func writeToFireBase() {
-        
-        let tempWeeklyBudget = User()
-        
+                
         let budgetDB = Database.database().reference().child((Auth.auth().currentUser?.uid)!)
         
         let budgetDictionary = ["Username": Auth.auth().currentUser?.email,
@@ -141,11 +139,11 @@ class ConfigController: UIViewController, UITextFieldDelegate {
             
         }
         
-        budgetDB.child("Daily Spending").observe(DataEventType.value) { (snapshot) in
+        budgetDB.child("Sum").observe(DataEventType.value) { (snapshot) in
             
             if snapshot.hasChildren() == false {
                 
-                budgetDB.child("Daily Spending").setValue(tempWeeklyBudget.dailySpending) {
+                budgetDB.child("Sum").setValue(self.sumDict) {
                     (error, reference) in
                     
                     if error != nil {

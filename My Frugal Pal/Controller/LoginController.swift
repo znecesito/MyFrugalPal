@@ -9,9 +9,10 @@
 import UIKit
 import Firebase
 import ProgressHUD
-
+ 
 class LoginController: UIViewController {
     
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -24,6 +25,7 @@ class LoginController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: Any) {
         
+        self.loginButton.isEnabled = false
         ProgressHUD.show()
         
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
@@ -39,8 +41,9 @@ class LoginController: UIViewController {
                 
             }
             else {
-                //success                
+                //success
                 ProgressHUD.dismiss()
+                self.loginButton.isEnabled = true
                 
                 self.performSegue(withIdentifier: "loginSegue", sender: self)
                 

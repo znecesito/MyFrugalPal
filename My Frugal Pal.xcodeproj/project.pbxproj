@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34088DBC21000E2B00C37F32 /* SpentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34088DBB21000E2B00C37F32 /* SpentCell.swift */; };
+		3416A88720FF001A003792F5 /* Spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416A88620FF001A003792F5 /* Spending.swift */; };
 		3443E3DC20D0339600FE6932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3DB20D0339600FE6932 /* AppDelegate.swift */; };
 		3443E3DE20D0339600FE6932 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3DD20D0339600FE6932 /* MainViewController.swift */; };
 		3443E3E120D0339600FE6932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3443E3DF20D0339600FE6932 /* Main.storyboard */; };
 		3443E3E620D0339B00FE6932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3443E3E420D0339B00FE6932 /* LaunchScreen.storyboard */; };
 		3443E3F220D0559500FE6932 /* ConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F120D0559500FE6932 /* ConfigController.swift */; };
 		3443E3F420D05AE000FE6932 /* WeekController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F320D05AE000FE6932 /* WeekController.swift */; };
-		3443E3F620D0B73C00FE6932 /* WeeklyBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F520D0B73C00FE6932 /* WeeklyBudget.swift */; };
-		3443E3F820D0BB4200FE6932 /* DayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E3F720D0BB4200FE6932 /* DayController.swift */; };
 		344ED5F420DB76A4004172FF /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344ED5F320DB76A4004172FF /* RegisterController.swift */; };
 		344ED5F620DB76DD004172FF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344ED5F520DB76DD004172FF /* LoginController.swift */; };
 		345226B0649DAD1EC84F774A /* Pods_My_Frugal_Pal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F82546243356AF757077D57 /* Pods_My_Frugal_Pal.framework */; };
@@ -22,14 +22,14 @@
 		34D84ECF20DB12150035DC10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D84ECE20DB12150035DC10 /* Images.xcassets */; };
 		34FE6CA820F801EA00372B39 /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CA720F801EA00372B39 /* DayTableViewController.swift */; };
 		34FE6CAA20F8076E00372B39 /* CutomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CA920F8076E00372B39 /* CutomNavigationController.swift */; };
-		34FE6CAC20F8165200372B39 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CAB20F8165200372B39 /* User.swift */; };
-		34FE6CAE20F81B0900372B39 /* DailyBudget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6CAD20F81B0900372B39 /* DailyBudget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F82546243356AF757077D57 /* Pods_My_Frugal_Pal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Frugal_Pal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6D57CA45806E2189A94AC8 /* Pods-My Frugal Pal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Frugal Pal.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Frugal Pal/Pods-My Frugal Pal.release.xcconfig"; sourceTree = "<group>"; };
 		219DE7C080DD8EC6CD69D337 /* Pods-My Frugal Pal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Frugal Pal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Frugal Pal/Pods-My Frugal Pal.debug.xcconfig"; sourceTree = "<group>"; };
+		34088DBB21000E2B00C37F32 /* SpentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpentCell.swift; sourceTree = "<group>"; };
+		3416A88620FF001A003792F5 /* Spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spending.swift; sourceTree = "<group>"; };
 		3443E3D820D0339600FE6932 /* My Frugal Pal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Frugal Pal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3443E3DB20D0339600FE6932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3443E3DD20D0339600FE6932 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -38,16 +38,12 @@
 		3443E3E720D0339B00FE6932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3443E3F120D0559500FE6932 /* ConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigController.swift; sourceTree = "<group>"; };
 		3443E3F320D05AE000FE6932 /* WeekController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekController.swift; sourceTree = "<group>"; };
-		3443E3F520D0B73C00FE6932 /* WeeklyBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyBudget.swift; sourceTree = "<group>"; };
-		3443E3F720D0BB4200FE6932 /* DayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayController.swift; sourceTree = "<group>"; };
 		344ED5F320DB76A4004172FF /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		344ED5F520DB76DD004172FF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		3492BE1F20D8A0EE0046187F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34D84ECE20DB12150035DC10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		34FE6CA720F801EA00372B39 /* DayTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewController.swift; sourceTree = "<group>"; };
 		34FE6CA920F8076E00372B39 /* CutomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutomNavigationController.swift; sourceTree = "<group>"; };
-		34FE6CAB20F8165200372B39 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		34FE6CAD20F81B0900372B39 /* DailyBudget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBudget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +64,14 @@
 				0F82546243356AF757077D57 /* Pods_My_Frugal_Pal.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34088DBF2100202B00C37F32 /* Sub Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34FE6CA920F8076E00372B39 /* CutomNavigationController.swift */,
+			);
+			path = "Sub Controllers";
 			sourceTree = "<group>";
 		};
 		3443E3CF20D0339600FE6932 = {
@@ -91,6 +95,7 @@
 		3443E3DA20D0339600FE6932 /* My Frugal Pal */ = {
 			isa = PBXGroup;
 			children = (
+				3443E3DB20D0339600FE6932 /* AppDelegate.swift */,
 				3443E3EF20D0340900FE6932 /* View */,
 				3443E3ED20D033FD00FE6932 /* Model */,
 				3443E3EE20D0340600FE6932 /* Controller */,
@@ -104,9 +109,7 @@
 		3443E3ED20D033FD00FE6932 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				34FE6CAB20F8165200372B39 /* User.swift */,
-				3443E3F520D0B73C00FE6932 /* WeeklyBudget.swift */,
-				34FE6CAD20F81B0900372B39 /* DailyBudget.swift */,
+				3416A88620FF001A003792F5 /* Spending.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,15 +117,13 @@
 		3443E3EE20D0340600FE6932 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3443E3DB20D0339600FE6932 /* AppDelegate.swift */,
 				3443E3DD20D0339600FE6932 /* MainViewController.swift */,
-				3443E3F120D0559500FE6932 /* ConfigController.swift */,
-				3443E3F320D05AE000FE6932 /* WeekController.swift */,
-				3443E3F720D0BB4200FE6932 /* DayController.swift */,
 				344ED5F320DB76A4004172FF /* RegisterController.swift */,
 				344ED5F520DB76DD004172FF /* LoginController.swift */,
+				3443E3F320D05AE000FE6932 /* WeekController.swift */,
 				34FE6CA720F801EA00372B39 /* DayTableViewController.swift */,
-				34FE6CA920F8076E00372B39 /* CutomNavigationController.swift */,
+				3443E3F120D0559500FE6932 /* ConfigController.swift */,
+				34088DBF2100202B00C37F32 /* Sub Controllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				3443E3DF20D0339600FE6932 /* Main.storyboard */,
+				34088DBB21000E2B00C37F32 /* SpentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,6 +236,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -243,6 +246,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -276,18 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3443E3F820D0BB4200FE6932 /* DayController.swift in Sources */,
 				3443E3F420D05AE000FE6932 /* WeekController.swift in Sources */,
+				34088DBC21000E2B00C37F32 /* SpentCell.swift in Sources */,
 				3443E3DE20D0339600FE6932 /* MainViewController.swift in Sources */,
 				344ED5F420DB76A4004172FF /* RegisterController.swift in Sources */,
 				34FE6CAA20F8076E00372B39 /* CutomNavigationController.swift in Sources */,
+				3416A88720FF001A003792F5 /* Spending.swift in Sources */,
 				3443E3F220D0559500FE6932 /* ConfigController.swift in Sources */,
 				344ED5F620DB76DD004172FF /* LoginController.swift in Sources */,
 				3443E3DC20D0339600FE6932 /* AppDelegate.swift in Sources */,
-				3443E3F620D0B73C00FE6932 /* WeeklyBudget.swift in Sources */,
 				34FE6CA820F801EA00372B39 /* DayTableViewController.swift in Sources */,
-				34FE6CAE20F81B0900372B39 /* DailyBudget.swift in Sources */,
-				34FE6CAC20F8165200372B39 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

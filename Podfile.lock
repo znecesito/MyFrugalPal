@@ -2,30 +2,30 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - Firebase (5.3.0):
-    - Firebase/Core (= 5.3.0)
-  - Firebase/Auth (5.3.0):
+  - Firebase (5.4.0):
+    - Firebase/Core (= 5.4.0)
+  - Firebase/Auth (5.4.0):
     - Firebase/CoreOnly
-    - FirebaseAuth (= 5.0.1)
-  - Firebase/Core (5.3.0):
+    - FirebaseAuth (= 5.0.2)
+  - Firebase/Core (5.4.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.0.1)
-  - Firebase/CoreOnly (5.3.0):
-    - FirebaseCore (= 5.0.4)
-  - Firebase/Database (5.3.0):
+  - Firebase/CoreOnly (5.4.0):
+    - FirebaseCore (= 5.0.5)
+  - Firebase/Database (5.4.0):
     - Firebase/CoreOnly
-    - FirebaseDatabase (= 5.0.1)
+    - FirebaseDatabase (= 5.0.2)
   - FirebaseAnalytics (5.0.1):
     - FirebaseCore (~> 5.0)
     - FirebaseInstanceID (~> 3.0)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
-  - FirebaseAuth (5.0.1):
+  - FirebaseAuth (5.0.2):
     - FirebaseCore (~> 5.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (5.0.4):
+  - FirebaseCore (5.0.5):
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-  - FirebaseDatabase (5.0.1):
+  - FirebaseDatabase (5.0.2):
     - FirebaseCore (~> 5.0)
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.1.1):
@@ -41,6 +41,7 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - ProgressHUD (2.51)
+  - SwipeCellKit (2.4.3)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - ProgressHUD
+  - SwipeCellKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -63,6 +65,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - ProgressHUD
+    - SwipeCellKit
 
 EXTERNAL SOURCES:
   ChameleonFramework:
@@ -75,18 +78,19 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Firebase: 68afeeb05461db02d7c9e3215cda28068670f4aa
+  Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
-  FirebaseAuth: 463b8ce33bd5d05f706dcd4615499e3212b4132b
-  FirebaseCore: 62f1b792a49bb9e8b4073f24606d2c93ffc352f0
-  FirebaseDatabase: 482bad9c2abd422bb2321194fb8c937e67426a89
+  FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
+  FirebaseCore: 42b3267233bd21a5abd54117ccc38ca3dd0f8e83
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
   FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
+  SwipeCellKit: cee9906e6d3a36e22ad1a852fba7f8fa0839d113
 
-PODFILE CHECKSUM: eda1445d337ac353f5a681306d345886259ec4ca
+PODFILE CHECKSUM: 19022b5c4beb1316ad1439fcb454cf1fefd0924f
 
 COCOAPODS: 1.5.3

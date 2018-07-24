@@ -12,6 +12,8 @@ target 'My Frugal Pal' do
 	pod 'Firebase/Database'
     pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 	pod 'ProgressHUD'
+    pod 'SwipeCellKit'
+
 end
 #post_install do |installer|
 #    installer.pods_project.targets.each do |target|

@@ -14,20 +14,10 @@ class RegisterController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    func addUsersToFirebase() {
-        
-        let userDB = Database.database().reference().child("Users")!)
-        
-        
-        
     }
 
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -56,6 +46,7 @@ class RegisterController: UIViewController {
                 }
                 else {
                     //success
+                                        
                     ProgressHUD.dismiss()
 
                     self.performSegue(withIdentifier: "registerCompleteSegue", sender: self)
