@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6464386F9A41C959D6E87D745791D28"
-               BlueprintName = "ProgressHUD"
+               BlueprintIdentifier = "37BFB65B77E7DE45D25B442561B6DF7D"
+               BlueprintName = "SwipeCellKit"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "ProgressHUD.framework">
+               BuildableName = "SwipeCellKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
